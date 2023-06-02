@@ -19,26 +19,133 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="header-wrapper">
-          <a href="" class="link">
-            <svg class="icon-bose-logo" width="190" height="24">
-              <use href="./images/sprite.svg#icon-bose-logo"></use>
-            </svg>
-          </a>
-          <button type="button" class="menu-button button">
-            <svg class="menu-button" width="24" height="24">
-              <use href="./images/sprite.svg#icon-menu"></use>
-            </svg>
-          </button>
+      <div class="container header-wrapper">
+        <a href="" class="link">
+          <svg class="icon-bose-logo" width="190" height="24">
+            <use href="./images/sprite.svg#icon-bose-logo"></use>
+          </svg>
+        </a>
+        <button type="button" class="menu-button button js-open-menu">
+          <svg class="menu-button" width="24" height="24">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu-container js-menu-container is-open">
+        <div class="container top-container">
+          <div class="menu-navigations-container">
+            <a href="" class="link">
+              <svg class="icon-bose-logo" width="190" height="24">
+                <use href="./images/sprite.svg#icon-bose-logo"></use>
+              </svg>
+            </a>
+            <button type="button" class="close-button button js-close-menu">
+              <svg class="menu-button" width="24" height="24">
+                <use href="./images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+          <nav>
+            <ul class="list">
+              <li class="menu-item">
+                <a href="" class="link menu-link">Home</a>
+              </li>
+              <li class="menu-item">
+                <a href="" class="link menu-link">Recommended</a>
+              </li>
+              <li class="menu-item">
+                <a href="" class="link menu-link">Categories</a>
+              </li>
+              <li class="menu-item">
+                <a href="" class="link menu-link">How to buy</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
     <main>
       <!-- Hero -->
       <section class="hero-section">
-        <div class="container"></div>
+        <div class="container">
+          <svg class="hero-icon">
+            <use href="./images/sprite.svg#icon-sound-waves"></use>
+          </svg>
+          <h1 class="hero-title">The world shades. Your music shines.</h1>
+        </div>
+      </section>
+
+      <!-- Section Recommended -->
+
+      <section class="section-recommended">
+        <div class="container">
+          <h2 class="section-title">Recommended</h2>
+          <ul class="list">
+            <li>
+              <a href="" class="link">
+                <picture>
+                  <source
+                    media="(max-width: 743px)"
+                    srcset="
+                      ./images/recommended/recommended-mobile/column-1-mobile.jpg    1x,
+                      ./images/recommended/recommended-mobile/column-1-mobile@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/recommended/recommended-mobile/column-1-mobile.jpg"
+                    alt="musical column"
+                  />
+                </picture>
+                <h3></h3>
+                <p></p>
+                <p></p>
+              </a>
+            </li>
+            <li>
+              <a href="" class="link">
+                <picture>
+                  <source
+                    media="(max-width: 743px)"
+                    srcset="
+                      ./images/recommended/recommended-mobile/column-2-mobile.jpg    1x,
+                      ./images/recommended/recommended-mobile/column-2-mobile@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/recommended/recommended-mobile/column-2-mobile.jpg"
+                    alt="musical column"
+                  />
+                </picture>
+              </a>
+              <h3></h3>
+              <p></p>
+              <p></p>
+            </li>
+            <li>
+              <a href="" class="link">
+                <picture>
+                  <source
+                    media="(max-width: 743px)"
+                    srcset="
+                      ./images/recommended/recommended-mobile/column-3-mobile.jpg    1x,
+                      ./images/recommended/recommended-mobile/column-3-mobile@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/recommended/recommended-mobile/column-3-mobile.jpg"
+                    alt="musical column"
+                  />
+                </picture>
+              </a>
+              <h3></h3>
+              <p></p>
+              <p></p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
