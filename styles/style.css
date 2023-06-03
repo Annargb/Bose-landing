@@ -304,8 +304,75 @@ img {
 }
 
 .section-title {
+  margin-bottom: 48px;
   font-size: 40px;
   line-height: 1;
   text-align: center;
   letter-spacing: -1.5px;
+}
+
+.card-image {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.recommended-card {
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--main-text-color);
+}
+
+.card-title {
+  margin-bottom: 8px;
+}
+
+.card-description {
+  margin-bottom: 12px;
+}
+
+.card-price {
+  font-weight: 700;
+}
+
+.card-link {
+  display: block;
+}
+
+.card-link:hover,
+.card-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+@media screen and (min-width: 744px) {
+  .section-title {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 743px) {
+  .card-item:not(:last-child) {
+    margin-bottom: 48px;
+  }
+
+  .mobile-title {
+    max-width: 260px;
+  }
+}
+
+@media screen and (min-width: 744px) and (max-width: 1259px) {
+  .card-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .card-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .card-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
 }

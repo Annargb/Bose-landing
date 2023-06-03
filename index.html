@@ -31,7 +31,7 @@
           </svg>
         </button>
       </div>
-      <div class="menu-container js-menu-container is-open">
+      <div class="menu-container js-menu-container">
         <div class="container top-container">
           <div class="menu-navigations-container">
             <a href="" class="link">
@@ -80,10 +80,24 @@
       <section class="section-recommended">
         <div class="container">
           <h2 class="section-title">Recommended</h2>
-          <ul class="list">
-            <li>
-              <a href="" class="link">
-                <picture>
+          <ul class="card-list list">
+            <li class="card-item">
+              <a href="" class="card-link link">
+                <picture class="card-image">
+                  <source
+                    media="(min-width: 1260px)"
+                    srcset="
+                      ./images/recommended/recommended-desktop/column-1-desktop.jpg    1x,
+                      ./images/recommended/recommended-desktop/column-1-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 744px)"
+                    srcset="
+                      ./images/recommended/recommended-tablet/column-1-tablet.jpg    1x,
+                      ./images/recommended/recommended-tablet/column-1-tablet@2x.jpg 2x
+                    "
+                  />
                   <source
                     media="(max-width: 743px)"
                     srcset="
@@ -96,14 +110,30 @@
                     alt="musical column"
                   />
                 </picture>
-                <h3></h3>
-                <p></p>
-                <p></p>
+                <h3 class="recommended-card card-title">
+                  Bose portable Smart speaker
+                </h3>
+                <p class="recommended-card card-description">Smart home</p>
+                <p class="recommended-card card-price">$ 399.00</p>
               </a>
             </li>
-            <li>
-              <a href="" class="link">
-                <picture>
+            <li class="card-item">
+              <a href="" class="card-link link">
+                <picture class="card-image">
+                  <source
+                    media="(min-width: 1260px)"
+                    srcset="
+                      ./images/recommended/recommended-desktop/column-2-desktop.jpg    1x,
+                      ./images/recommended/recommended-desktop/column-2-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 744px)"
+                    srcset="
+                      ./images/recommended/recommended-tablet/column-2-tablet.jpg    1x,
+                      ./images/recommended/recommended-tablet/column-2-tablet@2x.jpg 2x
+                    "
+                  />
                   <source
                     media="(max-width: 743px)"
                     srcset="
@@ -116,14 +146,32 @@
                     alt="musical column"
                   />
                 </picture>
+                <h3 class="recommended-card card-title">
+                  SoundLink Flex Bluetooth speaker
+                </h3>
+                <p class="recommended-card card-description">
+                  Portable bluetooth
+                </p>
+                <p class="recommended-card card-price">$ 149.00</p>
               </a>
-              <h3></h3>
-              <p></p>
-              <p></p>
             </li>
-            <li>
-              <a href="" class="link">
-                <picture>
+            <li class="card-item">
+              <a href="" class="card-link link">
+                <picture class="card-image">
+                  <source
+                    media="(min-width: 1260px)"
+                    srcset="
+                      ./images/recommended/recommended-desktop/column-3-desktop.jpg    1x,
+                      ./images/recommended/recommended-desktop/column-3-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 744px)"
+                    srcset="
+                      ./images/recommended/recommended-tablet/column-3-tablet.jpg    1x,
+                      ./images/recommended/recommended-tablet/column-3-tablet@2x.jpg 2x
+                    "
+                  />
                   <source
                     media="(max-width: 743px)"
                     srcset="
@@ -136,10 +184,14 @@
                     alt="musical column"
                   />
                 </picture>
+                <h3 class="recommended-card card-title mobile-title">
+                  SoundLink Color Bluetooth speaker II
+                </h3>
+                <p class="recommended-card card-description">
+                  Portable bluetooth
+                </p>
+                <p class="recommended-card card-price">$ 129.00</p>
               </a>
-              <h3></h3>
-              <p></p>
-              <p></p>
             </li>
           </ul>
         </div>
