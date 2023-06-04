@@ -19,22 +19,29 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-wrapper">
-        <a href="" class="link">
+      <div class="container header-wrapper" id="menu">
+        <a href="#menu" class="link">
           <svg class="icon-bose-logo" width="190" height="24">
             <use href="./images/sprite.svg#icon-bose-logo"></use>
           </svg>
         </a>
         <button type="button" class="menu-button button js-open-menu">
           <svg class="menu-button" width="24" height="24">
-            <use href="./images/sprite.svg#icon-menu"></use>
+            <use
+              href="./images/sprite.svg#icon-menu"
+              class="icon-main-menu"
+            ></use>
+            <use
+              href="./images/sprite.svg#icon-menu-hover"
+              class="icon-main-menu-hover"
+            ></use>
           </svg>
         </button>
       </div>
       <div class="menu-container js-menu-container">
         <div class="container top-container">
           <div class="menu-navigations-container">
-            <a href="" class="link">
+            <a href="#menu" class="link">
               <svg class="icon-bose-logo" width="190" height="24">
                 <use href="./images/sprite.svg#icon-bose-logo"></use>
               </svg>
@@ -48,16 +55,16 @@
           <nav>
             <ul class="list">
               <li class="menu-item">
-                <a href="" class="link menu-link">Home</a>
+                <a href="#menu" class="link menu-link">Home</a>
               </li>
               <li class="menu-item">
-                <a href="" class="link menu-link">Recommended</a>
+                <a href="#recommended" class="link menu-link">Recommended</a>
               </li>
               <li class="menu-item">
-                <a href="" class="link menu-link">Categories</a>
+                <a href="#categories" class="link menu-link">Categories</a>
               </li>
               <li class="menu-item">
-                <a href="" class="link menu-link">How to buy</a>
+                <a href="#how-to-buy" class="link menu-link">How to buy</a>
               </li>
             </ul>
           </nav>
@@ -77,7 +84,7 @@
 
       <!-- Section Recommended -->
 
-      <section class="section-recommended">
+      <section class="section-recommended" id="recommended">
         <div class="container">
           <h2 class="section-title">Recommended</h2>
           <ul class="card-list list">
@@ -201,17 +208,31 @@
       </section>
 
       <!-- Section Category of products -->
-      <section class="section-products">
+      <section class="section-products" id="categories">
         <div class="container">
           <h2 class="section-title section-products-title">
             Browse Bose products by category
           </h2>
           <ul class="list">
-            <li>
+            <li class="products-card-item">
               <a href="" class="link">
                 <ul class="products-wrapper list">
                   <li>
                     <picture>
+                      <source
+                        media="(min-width: 1260px)"
+                        srcset="
+                          ./images/products/products-desktop/earbud-desktop.jpg    1x,
+                          ./images/products/products-desktop/earbud-desktop@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 744px)"
+                        srcset="
+                          ./images/products/products-tablet/earbud-tablet.jpg    1x,
+                          ./images/products/products-tablet/earbud-tablet@2x.jpg 2x
+                        "
+                      />
                       <source
                         media="(max-width: 743px)"
                         srcset="
@@ -227,6 +248,20 @@
                   </li>
                   <li>
                     <picture>
+                      <source
+                        media="(min-width: 1260px)"
+                        srcset="
+                          ./images/products/products-desktop/headphone-desktop.jpg    1x,
+                          ./images/products/products-desktop/headphone-desktop@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 744px)"
+                        srcset="
+                          ./images/products/products-tablet/headphone-tablet.jpg    1x,
+                          ./images/products/products-tablet/headphone-tablet@2x.jpg 2x
+                        "
+                      />
                       <source
                         media="(max-width: 743px)"
                         srcset="
@@ -244,11 +279,25 @@
                 <h3 class="products-card-title">Headphones & earbuds</h3>
               </a>
             </li>
-            <li>
+            <li class="products-card-item">
               <a href="" class="link">
                 <ul class="products-wrapper list">
                   <li>
                     <picture>
+                      <source
+                        media="(min-width: 1260px)"
+                        srcset="
+                          ./images/products/products-desktop/speaker-1-desktop.jpg    1x,
+                          ./images/products/products-desktop/speaker-1-desktop@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 744px)"
+                        srcset="
+                          ./images/products/products-tablet/speaker-1-tablet.jpg    1x,
+                          ./images/products/products-tablet/speaker-1-tablet@2x.jpg 2x
+                        "
+                      />
                       <source
                         media="(max-width: 743px)"
                         srcset="
@@ -264,6 +313,20 @@
                   </li>
                   <li>
                     <picture>
+                      <source
+                        media="(min-width: 1260px)"
+                        srcset="
+                          ./images/products/products-desktop/speaker-2-desktop.jpg    1x,
+                          ./images/products/products-desktop/speaker-2-desktop@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 744px)"
+                        srcset="
+                          ./images/products/products-tablet/speaker-2-tablet.jpg    1x,
+                          ./images/products/products-tablet/speaker-2-tablet@2x.jpg 2x
+                        "
+                      />
                       <source
                         media="(max-width: 743px)"
                         srcset="
@@ -281,11 +344,25 @@
                 <h3 class="products-card-title">Speakers</h3>
               </a>
             </li>
-            <li>
+            <li class="products-card-item">
               <a href="" class="link">
                 <ul class="products-wrapper list">
                   <li>
                     <picture>
+                      <source
+                        media="(min-width: 1260px)"
+                        srcset="
+                          ./images/products/products-desktop/sunglass-1-desktop.jpg    1x,
+                          ./images/products/products-desktop/sunglass-1-desktop@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 744px)"
+                        srcset="
+                          ./images/products/products-tablet/sunglass-1-tablet.jpg    1x,
+                          ./images/products/products-tablet/sunglass-1-tablet@2x.jpg 2x
+                        "
+                      />
                       <source
                         media="(max-width: 743px)"
                         srcset="
@@ -301,6 +378,20 @@
                   </li>
                   <li>
                     <picture>
+                      <source
+                        media="(min-width: 1260px)"
+                        srcset="
+                          ./images/products/products-desktop/sunglass-2-desktop.jpg    1x,
+                          ./images/products/products-desktop/sunglass-2-desktop@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 744px)"
+                        srcset="
+                          ./images/products/products-tablet/sunglass-2-tablet.jpg    1x,
+                          ./images/products/products-tablet/sunglass-2-tablet@2x.jpg 2x
+                        "
+                      />
                       <source
                         media="(max-width: 743px)"
                         srcset="
@@ -321,7 +412,35 @@
           </ul>
         </div>
       </section>
+
+      <!-- Section Why buy direct from Bose -->
+      <section class="advantages-section" id="how-to-buy">
+        <div class="container advantages-container">
+          <h2 class="section-title advantages-title">
+            Why buy direct from Bose
+          </h2>
+          <div class="advantages-text-wrapper">
+            <ul class="advantages-list list">
+              <li class="advantages-list-item">
+                Free 2-day shipping and returns
+              </li>
+              <li class="advantages-list-item">90-day risk-free trial</li>
+              <li class="advantages-list-item">World class customer service</li>
+              <li class="advantages-list-item">My Bose account management</li>
+            </ul>
+            <p class="advantage-text">
+              A great product is more than what’s in the box. It’s a promise of
+              premium performance, world-class support, and everything you
+              expect from a trusted brand. It’s just one of many reasons why
+              you’ll shop with confidence on Bose.com.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer"></footer>
 
     <script src="./js/mobile-menu.js"></script>
   </body>

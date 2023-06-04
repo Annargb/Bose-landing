@@ -114,6 +114,18 @@ img {
 
 /* Menu */
 
+.icon-main-menu-hover {
+  display: none;
+}
+
+.menu-button:hover .icon-main-menu-hover {
+  display: inline-block;
+}
+
+.menu-button:hover .icon-main-menu {
+  display: none;
+}
+
 .menu-container {
   position: fixed;
   top: 0;
@@ -152,6 +164,8 @@ img {
 }
 
 .menu-link {
+  position: relative;
+  padding-bottom: 8px;
   font-weight: 700;
   font-size: 22px;
   line-height: 1;
@@ -162,9 +176,14 @@ img {
   transition: text-decoration var(--duration-and-timing-function);
 }
 
-.menu-link:hover,
-.menu-link:focus {
-  text-decoration: underline;
+.menu-link:hover::after,
+.menu-link:focus::after {
+  content: "";
+  width: 100%;
+  border: 1px solid var(--main-text-color);
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .menu-item:not(:last-child) {
@@ -394,6 +413,7 @@ img {
 
 .products-wrapper {
   display: flex;
+  gap: 20px;
   margin-bottom: 16px;
 }
 
@@ -404,9 +424,12 @@ img {
   color: var(--main-text-color);
 }
 
+.products-card-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
 @media screen and (max-width: 743px) {
   .products-wrapper {
-    gap: 20px;
     flex-basis: calc((100% - 20px) / 2);
   }
 }
@@ -418,7 +441,145 @@ img {
     margin-left: auto;
   }
 
+  .products-wrapper {
+    gap: 24px;
+  }
+
   .products-card-title {
     font-size: 24px;
+  }
+
+  .products-card-item:not(:last-child) {
+    margin-bottom: 64px;
+  }
+}
+
+/* Section Why buy  */
+
+.advantages-section {
+  padding-bottom: 120px;
+}
+
+.advantages-title {
+  text-align: start;
+}
+
+.advantages-list {
+  margin-bottom: 40px;
+}
+
+.advantages-list-item {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.advantages-list-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.advantage-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.69;
+}
+
+@media screen and (max-width: 743px) {
+  .section-title.advantages-title {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 744px) {
+  .advantages-container {
+    display: flex;
+    gap: 24px;
+  }
+
+  .advantages-title {
+    max-width: 287px;
+    flex-shrink: 0;
+  }
+
+  .section-title.advantages-title {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .advantages-container {
+    gap: 235px;
+  }
+
+  .advantages-title {
+    max-width: 287px;
+    flex-shrink: 0;
+  }
+}
+
+/* Footer */
+
+.footer {
+  max-width: 320px;
+  min-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/footer-img/footer-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 744px) {
+  .footer {
+    max-width: 744px;
+    min-height: 400px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .footer {
+    max-width: 1260px;
+    min-height: 460px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 743px),
+  screen and (min-resolution: 192dpi) and (max-width: 743px),
+  screen and (min-resolution: 2dppx) and (max-width: 743px) {
+  .footer {
+    background-image: url("../images/footer-img/footer-mobile@2x.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 1) and (min-width: 744px),
+  screen and (min-resolution: 96dpi) and (min-width: 744px),
+  screen and (min-resolution: 1dppx) and (min-width: 744px) {
+  .footer {
+    background-image: url("../images/footer-img/footer-tablet.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 744px),
+  screen and (min-resolution: 192dpi) and (min-width: 744px),
+  screen and (min-resolution: 12dppx) and (min-width: 744px) {
+  .footer {
+    background-image: url("../images/footer-img/footer-tablet@2x.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 1) and (min-width: 1260px),
+  screen and (min-resolution: 96dpi) and (min-width: 1260px),
+  screen and (min-resolution: 1dppx) and (min-width: 1260px) {
+  .footer {
+    background-image: url("../images/footer-img/footer-desktop.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1260px),
+  screen and (min-resolution: 192dpi) and (min-width: 1260px),
+  screen and (min-resolution: 12dppx) and (min-width: 1260px) {
+  .footer {
+    background-image: url("../images/footer-img/footer-desktop@2x.jpg");
   }
 }
