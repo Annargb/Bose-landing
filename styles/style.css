@@ -330,8 +330,7 @@ img {
   letter-spacing: -1.5px;
 }
 
-.card-image {
-  display: block;
+.card-img {
   margin-bottom: 32px;
 }
 
